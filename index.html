@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Pessoal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        #flower {
+            display: none;
+            width: 150px;
+            height: 150px;
+        }
+        #danceButton {
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="danceButton">Clique aqui</button>
+    <img id="flower" src="https://example.com/dancing-flower.gif" alt="Flor dançando">
+    <script>
+        document.getElementById('danceButton').addEventListener('click', function() {
+            var flower = document.getElementById('flower');
+            flower.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
